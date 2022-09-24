@@ -1,0 +1,35 @@
+use Northwind
+
+
+
+--1
+select  City,COUNT(*)empleados from Employees
+   group by City
+
+------------------------------------------------------------
+--3
+     select CompanyName,City,
+	
+   coalesce(Region, 'no hay region')Region
+
+   from Customers
+   where City like 'Mé%'
+
+   -----------------------------------------------------------
+   --2
+   select 
+   OrderID, OrderDate
+   from Orders
+   order by OrderID,OrderDate asc; 
+  
+
+
+ --------------------------------------------------------
+
+ --5
+select ContactName   
+   
+   from Customers
+   where ContactName like 'c%'
+
+
